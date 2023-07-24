@@ -105,34 +105,36 @@
  	<!--  Contact Section Starts  -->
  	
  	<div class="contact">
- 		<h2>Get in Touch</h2>
- 		<div class="">
-		  <form>
-
-		    <label for="fname">First Name</label>
-		    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-		    <label for="lname">Last Name</label>
-		    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-		    <label for="country">Country</label>
-		    <select id="country" name="country">
-		      <option value="australia">Australia</option>
-		      <option value="canada">Canada</option>
-		      <option value="usa">USA</option>
-		    </select>
-
-		    <label for="subject">Subject</label>
-		    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-		    <input type="submit" value="Submit">
-
-		  </form>
+	  <form>
+	    <div class="row">
+		<label>First Name</label>
+		<div class="name">
+		<input type="text" required id="fname" name="firstname" placeholder="Your name..">
+		<input type="text" required id="lname" name="lastname" placeholder="Your last name..">
 		</div>
- 		<button>Read More</button>
- 	</div>
- 	
- 	
+	    </div>
+	    
+	     <div class="row">
+		<label>Email</label>
+		<input type="email" required id="lname" name="lastname" placeholder="Your last name..">
+	    </div>
+	    
+	     <div class="row">
+		<label>Phone Number</label>
+		<input type="number" required id="lname" name="lastname" placeholder="Your last name..">
+	    </div>
+	    
+	   
+	    
+	    <div class="row">
+		<label>Subject</label>
+		<textarea id="subject" required name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	    </div>
+
+	      <button>Submit</button>
+
+	  </form>
+	</div> 	
  	<!--  Contact Section Ends  -->
 	<script src="index.js"></script>
   </body>
