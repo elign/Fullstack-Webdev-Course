@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  flex-direction: column;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(255, 255, 210);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.text {
+  padding: 0px 20px;
+}
+
+.text h2 {
+  line-height: 0;
+}
+
+.text p {
+}
