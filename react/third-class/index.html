@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const rootElement = document.querySelector(".root");
+
+      const welcome = "Welcome to 30 Days Of React";
+      const title = "Getting Started React";
+      const subtitle = "JavaScript Library";
+      const authorFirstName = "Asabeneh";
+      const authorLastName = "Yetayeh";
+      const date = "Oct 1, 2020";
+
+      // JSX element, header
+      const header = (
+        <header>
+          <div className="header-wrapper">
+            <h1>{welcome}</h1>
+            <h2>{title}</h2>
+            <h3>{subtitle}</h3>
+            <p>
+              Instructor: {authorFirstName} {authorLastName}
+            </p>
+            <small>Date: {date}</small>
+          </div>
+        </header>
+      );
+
+      const numOne = 3;
+      const numTwo = 2;
+      const greater = numOne > numTwo ? numOne : numTwo;
+      const num = undefined && 45;
+
+      const result = (
+        <p>
+          {numOne} + {numTwo} = {numOne + numTwo}
+          <br />
+          {num}
+        </p>
+      );
+
+      const author = {
+        firstName: "Harshit",
+        lastName: "Kh",
+      };
+
+      const personAge = (
+        <p>
+          {" "}
+          {author.firstName} {author.lastName}
+        </p>
+      );
+
+      const techs = ["HTML", "CSS", "JavaScript"];
+      const list = techs.map(val => <li>{val}</li>);
+
+      console.log(list);
+
+      const app = (
+        <div>
+          {header}
+          {result}
+          {personAge}
+          <ul>{list}</ul>
+        </div>
+      );
+
+      ReactDOM.render(app, rootElement);
+    </script>
+  </body>
+</html>

@@ -21,10 +21,10 @@
     <script type="text/babel">
       const rootElement = document.querySelector(".root");
       const styleObject = {
-        border : '2px solid red',
-        color : 'black',
-        fontSize : '18px',
-      }
+        border: "2px solid red",
+        color: "black",
+        fontSize: "18px",
+      };
 
       const header = (
         <header style={styleObject}>
@@ -47,9 +47,14 @@
         </main>
       );
 
+      const footerStyles = {
+        backgroundColor: "black",
+        color: "white",
+        padding: "5px",
+      };
       // JSX element
       const footer = (
-        <footer>
+        <footer style={footerStyles}>
           <p>Copyright 2023</p>
         </footer>
       );
