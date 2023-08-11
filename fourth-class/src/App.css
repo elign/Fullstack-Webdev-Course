@@ -1,0 +1,51 @@
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #FFF3DA;
+}
+
+.app {
+  /* border: 2px solid rgb(160, 160, 160); */
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  background-color: #BEADFA;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  background-image: url('/images/profile.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid #867ab3;
+}
+
+.skills-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul {
+  padding: 0px;
+}
+
+
+li {
+  background-color: #867ab3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.joining-date {
+  color: rgb(104, 104, 104);
+  font-size: 14px;
+}
