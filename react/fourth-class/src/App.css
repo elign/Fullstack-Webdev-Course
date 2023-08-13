@@ -5,9 +5,17 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #FFF3DA;
+  padding: 50px 0px;
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.profile-box {
   /* border: 2px solid rgb(160, 160, 160); */
   padding: 40px;
   border-radius: 20px;
@@ -19,7 +27,6 @@ body {
 .profile {
   width: 150px;
   height: 150px;
-  background-image: url('/images/profile.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -48,4 +55,16 @@ li {
 .joining-date {
   color: rgb(104, 104, 104);
   font-size: 14px;
+}
+
+.color-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.color-bar {
+  border: 2px solid black;
+  padding: 10px 250px;
+  border-radius: 10px;
 }

@@ -1,30 +1,61 @@
 import './App.css'
+import Profile from './components/Profile'
+// import Colorbars from './components/Colorbars'
 
 function App() {
 
-  const arr = ['HTML', 'CSS', 'Sass', 'JS', 'Redux', 'Node', 'MongoDB', 'Git', 'MySql', 'Java'];
-  const skillsArray = arr.map(skill => <li key={skill}>{skill}</li>);
+  // const thisColors = ['#504099', '#614BC3', '#FE7BE5', '#C70039'];
+  // const thisColorstwo = ['#F8DE22', '#DAC0A3', '#FFC6AC', '#F79BD3'];
+  // const thisColorsthree = ['#C70039', '#F8DE22', '#DAC0A3', '#FFC6AC', '#F79BD3'];
+
+  const profiles = [
+    {
+      name: "Elizabeth Queen",
+      imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+      title: "Queen of England & Home-maker",
+      skills: ['HTML', 'CSS', 'Sass', 'JS', 'Redux', 'Node', 'MongoDB', 'Git', 'MySql', 'Java'],
+      joiningDate: "July 11, 2023",
+      favouriteColor: "#EEE0C9"
+    },
+    {
+      name: "John Smith",
+      imageUrl: 'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=723&q=80',
+      title: "Software Engineer",
+      skills: ['Python', 'Java', 'C++', 'SQL', 'React', 'Node.js', 'Docker', 'Git'],
+      joiningDate: "August 5, 2022",
+      favouriteColor: "#C8E4B2"
+    },
+    {
+      name: "Emily Johnson",
+      imageUrl: "https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      title: "Graphic Designer",
+      skills: ['Adobe Photoshop', 'Illustrator', 'InDesign', 'Sketch', 'Typography', 'UI/UX Design'],
+      joiningDate: "January 18, 2023",
+      favouriteColor: "#F79BD3"
+
+    },
+    {
+      name: "Michael Davis",
+      imageUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+      title: "Data Scientist",
+      skills: ['Python', 'R', 'Machine Learning', 'Statistical Analysis', 'SQL', 'Tableau', 'Pandas'],
+      joiningDate: "June 30, 2022",
+      favouriteColor: "#EAC696"
+    }
+  ];
+
+  const profileArray = profiles.map((profile) => {
+    return (
+      <Profile key={profile} profile={profile} />
+    )
+  })
 
   return (
     <div className='app'>
-      {/* Image */}
-      <div className="profile">      
-      </div>
-
-      {/* Title & SubTitle */}
-      <h2>Elizabeth Queen</h2>
-      <span>Queen of England & Home-maker</span>
-
-      {/* Skills */}
-      <h2>SKILLS</h2>
-      <div>
-        <ul className='skills-list'>
-          {skillsArray}
-        </ul>
-      </div>
-
-      {/* Joining Date */}
-      <span className='joining-date'>Joined on July 11, 2023</span>
+      {profileArray}
+      {/* <Colorbars colors={thisColors}/>
+      <Colorbars colors={thisColorstwo} />
+      <Colorbars colors={thisColorsthree} /> */}
     </div>
   )
 }
