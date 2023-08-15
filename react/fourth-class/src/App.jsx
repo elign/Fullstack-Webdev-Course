@@ -1,14 +1,13 @@
+import { useState } from 'react';
 import './App.css'
 import Profile from './components/Profile'
 // import Colorbars from './components/Colorbars'
-
 function App() {
 
   // const thisColors = ['#504099', '#614BC3', '#FE7BE5', '#C70039'];
   // const thisColorstwo = ['#F8DE22', '#DAC0A3', '#FFC6AC', '#F79BD3'];
   // const thisColorsthree = ['#C70039', '#F8DE22', '#DAC0A3', '#FFC6AC', '#F79BD3'];
-
-  const profiles = [
+  const [profiles, setProfiles] = useState([
     {
       name: "Elizabeth Queen",
       imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
@@ -42,11 +41,15 @@ function App() {
       joiningDate: "June 30, 2022",
       favouriteColor: "#EAC696"
     }
-  ];
+  ])
+  const deleteProfile = (idx) => {
+    const tempProfile = profiles.filter((val, i) => idx != i);
+    setProfiles(tempProfile);
+  }
 
-  const profileArray = profiles.map((profile) => {
+  const profileArray = profiles.map((profile, idx) => {
     return (
-      <Profile key={profile} profile={profile} />
+      <Profile key={idx} profile={profile} idx={idx} deleteProfile={deleteProfile} />
     )
   })
 

@@ -22,6 +22,7 @@ body {
   width: 350px;
   background-color: #BEADFA;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
 }
 
 .profile {
@@ -67,4 +68,16 @@ li {
   border: 2px solid black;
   padding: 10px 250px;
   border-radius: 10px;
+}
+
+.cross {
+  font-weight: 800;
+  font-size: x-large;
+  color:rgb(104, 104, 104);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

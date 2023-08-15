@@ -1,15 +1,12 @@
 export default function Profile(props) {
-    const profile = props?.profile;
-    const name = profile.name;
-    const title = profile.title;
-    const skills = profile.skills;
-    const imageUrl = profile.imageUrl;
-    const joiningDate = profile.joiningDate;
-    const bgColor = profile.favouriteColor;
+    const {name, title, skills, imageUrl, joiningDate, favouriteColor: bgColor} = props.profile;
+    const deleteProfile = props.deleteProfile;
+    const idx = props.idx;
     const skillsArray = skills.map(skill => <li key={skill}>{skill}</li>);
   
     return (
         <div style={{backgroundColor: bgColor}} className='profile-box'>
+            <button className="cross" onClick={() => deleteProfile(idx)}>X</button>
             {/* Image */}
             <div style={{backgroundImage: `url('${imageUrl}')`}}className="profile">
             </div>
