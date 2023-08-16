@@ -1,0 +1,23 @@
+.page {
+  min-height: 95vh;
+  background-color: #FAF3F0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
