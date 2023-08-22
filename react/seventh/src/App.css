@@ -21,3 +21,13 @@
   grid-template-columns: repeat(7, 1fr);
   gap: 6px;
 }
+
+.graphs {
+  width: 100vh;
+  transform: rotate(270deg);
+}
+
+.bar {
+  height: 30px;
+  background-color: yellow;
+}
