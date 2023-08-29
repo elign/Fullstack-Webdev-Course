@@ -1,3 +1,7 @@
+body {
+    background-color: #FFDBAA;
+}
+
 .index-page {
     min-height: 90vh;
     display: flex;
@@ -24,4 +28,50 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.form {
+    border: 2px solid black;
+    padding: 30px 30px;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #FFF3DA;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.logout {
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+label {
+    font-size: 15px;
+}
+
+input[type="text"], input[type="tel"], select{
+    height: 50px;
+    width: 92%;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0px 10px;
+    background-color: transparent;
+}
+
+select {
+    margin-bottom: 30px;
+    width: 100%;
 }

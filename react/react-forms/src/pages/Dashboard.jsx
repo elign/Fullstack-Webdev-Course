@@ -18,8 +18,8 @@ function Dashboard() {
   }, [user, loading]);
 
   return (
-    <div>
-      <button className="button" onClick={logout}>Hi {name} wanna Logout?</button>
+    <div className="dashboard">
+      <p className="logout" onClick={logout}>Hi {name} wanna Logout?</p>
       <ContactForm />
     </div>
   )
