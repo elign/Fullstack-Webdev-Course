@@ -71,7 +71,25 @@ input[type="text"], input[type="tel"], select{
     background-color: transparent;
 }
 
+.number-field {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 select {
     margin-bottom: 30px;
     width: 100%;
+}
+
+table {
+    border-collapse: collapse; 
+
+}
+
+td {
+    border: 2px solid black;
+    padding: 10px 20px;
+    background-color: #FFF3DA;
+
 }
